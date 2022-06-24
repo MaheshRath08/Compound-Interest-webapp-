@@ -1,14 +1,22 @@
 *{
     padding: 0;
     margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: black;
+}
+header::before{
     background-image:url("/car-bg.jpg") ;
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
     background-size: cover;
+    opacity: 50%;
 }
 .container{
-    background-color: black;
+    background-color: rgb(26, 25, 25);
     color: white;
     width: 600px;
     border-radius: 10px;
@@ -19,7 +27,7 @@ body{
     justify-content: center;
     outline: none;
     border: none;
-    box-shadow: 0 0 15px crimson;
+    box-shadow: 0 0 20px black;
 }
 label{
     margin: 10px;
@@ -38,6 +46,7 @@ input{
     border:none ;
     color: white;
     border-bottom: 3px solid white;
+    font-family: inherit;
 }
 h2{
     text-align: center;
@@ -71,4 +80,7 @@ button:hover{
 }
 button:active{
     background-color: rgb(221, 44, 80);
+}
+input[placeholder]{
+    font-style: italic;
 }
